@@ -1,11 +1,20 @@
 @font-face {
-  font-family: "Open Sans";
-  src: local("Open Sans"),
-    local("Open Sans"),
-    url("../fonts/opensans.woff2") format("woff2"),
-    url("../fonts/opensans.woff") format("woff");
+  font-family: "Oswald";
+  src: local("Oswald"),
+    url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald"),
+    url("../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../fonts/oswaldmedium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
   font-display: swap;
 }
 
@@ -20,14 +29,11 @@ html {
 }
 
 body {
-  min-width: @mobile-width;
-  margin: 0;
-  padding: 0;
-  // font-weight: @font-weight-base;
-  // font-size: @font-size-base;
-  // line-height: @line-height-base;
-  // font-family: @font-family-base;
-  text-transform: uppercase;
+  width: @mobile-width;
+  .reset-center();
+  font-weight: @font-weight-base;
+  font-size: @font-size-base;
+  font-family: @font-family-base;
   color: @black;
   background-color:@white;
 }
@@ -58,3 +64,11 @@ a {
 // .st4 {
 //   fill: #444444;
 // }
+
+@media (min-width: @tablet-width) {
+
+}
+
+@media (min-width: @desktop-width) {
+
+}

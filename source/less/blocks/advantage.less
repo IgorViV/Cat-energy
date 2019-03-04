@@ -1,0 +1,97 @@
+.advantage {
+  padding: 20px;
+  padding-top: 0;
+  padding-bottom: 42px;
+}
+
+.advantage__title {
+  .reset();
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.advantage__list {
+  .reset();
+  list-style: none;
+}
+
+.advantage__item {
+  position: relative;
+  .reset();
+  margin-bottom: 20px;
+  padding-top: 1px;
+  padding-left: 80px;
+  padding-bottom: 5px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #868686;
+}
+
+.advantage__item--last {
+  margin-bottom: 0;
+}
+
+.advantage__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  background-color: #68b738;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 5;
+}
+
+.advantage__item--leaf::before {
+  background-image: url(../img/advantage-leaf@1x.png);
+}
+
+@media  (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  .advantage__item--leaf::before {
+    background-image: url(../img/advantage-leaf@2x.png);
+  }
+}
+
+.advantage__item--powder::before {
+  background-image: url(../img/advantage-powder@1x.png);
+}
+
+@media  (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  .advantage__item--powder::before {
+    background-image: url(../img/advantage-powder@2x.png);
+  }
+}
+
+.advantage__item--dining::before {
+  background-image: url(../img/advantage-dining@1x.png);
+}
+
+@media  (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  .advantage__item--dining::before {
+    background-image: url(../img/advantage-dining@2x.png);
+  }
+}
+
+.advantage__item--clock::before {
+  background-image: url(../img/advantage-clock@1x.png);
+}
+
+@media  (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  .advantage__item--clock::before {
+    background-image: url(../img/advantage-clock@2x.png);
+  }
+}
+
+@media (min-width: @tablet-width) {
+
+}
+
+@media (min-width: @desktop-width) {
+
+}

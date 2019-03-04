@@ -1,0 +1,44 @@
+.page-nav {
+  display: none;
+}
+
+.page-nav--no-js {
+  display: initial;
+}
+
+.page-nav__list {
+  .reset();
+  list-style: none;
+}
+
+.page-nav__item {
+  .reset();
+  border-top: 1px solid #f7f7f7;
+}
+
+.page-nav__link {
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &[href]:hover {
+    color: #a0a0a0;
+  }
+
+  &[href]:active {
+    color: #cfcfcf;
+  }
+}
+
+@media (min-width: @tablet-width) {
+
+}
+
+@media (min-width: @desktop-width) {
+
+}
