@@ -22,10 +22,10 @@
 
 .footer__social {
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 100%;
   padding-top: 23px;
-  padding-left: 73px;
   padding-bottom: 20px;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
@@ -42,6 +42,10 @@
 
 .footer__social-link--insta {
   margin-right: 40px;
+}
+
+.footer__social-link--fb {
+  margin-right: 5px;
 }
 
 .footer__social-link:hover .footer__social-icon {
@@ -89,7 +93,78 @@
 }
 
 @media (min-width: @tablet-width) {
+  .footer {
+    // display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // align-items: center;
+    padding-top: 65px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 47px;
+    // background-color: #f2f2f2;
+  }
 
+  .footer__logo {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .footer__logo[href]:hover {
+    // opacity: 0.7;
+  }
+
+  .footer__logo[href]:active {
+    // opacity: 0.3;
+  }
+
+  .footer__social {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    width: 135px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .footer__developed {
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    width: 162px;
+    padding-top: 12px;
+    padding-bottom: 0;
+  }
+
+  .footer__maker {
+    .reset();
+    // font-family: "Arial", sans-serif;
+    // font-size: 16px;
+    // line-height: 16px;
+    // color: #444444;
+  }
+
+  .footer__icon-academy {
+    // fill: #666666;
+  }
+
+  .footer__developed:hover {
+    .footer__icon-academy {
+      // fill: #68b738;
+    }
+  }
+
+  .footer__developed:active {
+    .footer__maker {
+      // opacity: 0.3;
+    }
+
+    .footer__icon-academy {
+      // opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {

@@ -29,13 +29,16 @@ html {
 }
 
 body {
-  width: @mobile-width;
+  min-width: @mobile-width;
+  max-width: @tablet-width;
+  // width: 320px;
   .reset-center();
   font-weight: @font-weight-base;
   font-size: @font-size-base;
   font-family: @font-family-base;
   color: @black;
   background-color:@white;
+  box-shadow: 0 0 2px 0 #333333;
 }
 
 img {
@@ -66,7 +69,10 @@ a {
 // }
 
 @media (min-width: @tablet-width) {
-
+  body {
+    max-width: @desktop-width;
+    width: @tablet-width;
+  }
 }
 
 @media (min-width: @desktop-width) {
