@@ -54,12 +54,11 @@
 @media (min-width: @tablet-width) {
   .caption {
     position: relative;
-    height: 830px;
+    height: 840px;
+    padding-top: 30px;
     padding-left: 30px;
     padding-right: 30px;
-    // padding: 20px;
-    // padding-top: 25px;
-    // padding-bottom: 22px;
+    padding-bottom: 0;
     text-align: left;
     color: @black;
     // background-size: 320px 305px;
@@ -76,8 +75,8 @@
 
   .caption__title {
     width: 427px;
-    margin-left: 90px;
-    // margin-bottom: 25px;
+    margin-left: 88px;
+    margin-bottom: 42px;
     // font-weight: 400;
     font-size: 60px;
     line-height: 60px;
@@ -85,8 +84,9 @@
 
   .caption__slogan {
     width: 295px;
-    margin-left: 90px;
-    // margin-bottom: 30px;
+    .reset();
+    margin-left: 88px;
+    margin-bottom: 44px;
     font-size: 20px;
     line-height: 20px;
     // text-transform: uppercase;
@@ -104,9 +104,9 @@
 
   .caption__link {
     // display: block;
-    width: 246px;
+    width: 244px;
     margin-left: 90px;
-    // padding: 11px 0;
+    padding: 16px 0;
     font-size: 20px;
     line-height: 20px;
     text-align: center;
