@@ -113,26 +113,72 @@
     // text-transform: uppercase;
     // background-color: #68b738;
   }
-
-
 }
 
 @media (min-width: @desktop-width) {
   .caption {
+    height: auto;
+    min-height: 670px;
+    // position: relative;
     // padding: 20px;
     // padding-top: 25px;
     // padding-bottom: 22px;
+    padding: 0 40px;
+    padding-top: 95px;
     // text-align: center;
     // color: @white;
     // background-size: 320px 305px;
     // background-position: center top;
     // background-image: url(../img/index-background-desktop@1x.jpg);
     // background-repeat: no-repeat;
+    // border: 1px solid blue;
   }
 
   @media  (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     .caption {
       // background-image: url(../img/index-background-desktop@2x.jpg);
     }
+  }
+
+  .caption__title {
+    width: 420px;
+    margin-left: 83px;
+    margin-bottom: 49px;
+    // font-weight: 400;
+    // font-size: 60px;
+    // line-height: 60px;
+  }
+
+  .caption__slogan {
+    // width: 295px;
+    // .reset();
+    margin-left: 83px;
+    margin-bottom: 50px;
+    // font-size: 20px;
+    // line-height: 20px;
+    // text-transform: uppercase;
+  }
+
+  .caption__img {
+    // position: absolute;
+    // bottom: 0;
+    top: 0;
+    left: 50%;
+    z-index: -1;
+    width: 680px;
+    height: auto;
+    transform: translateX(-208px);
+  }
+
+  .caption__link {
+    // display: block;
+    // width: 244px;
+    margin-left: 83px;
+    // padding: 16px 0;
+    // font-size: 20px;
+    // line-height: 20px;
+    // text-align: center;
+    // text-transform: uppercase;
+    // background-color: #68b738;
   }
 }

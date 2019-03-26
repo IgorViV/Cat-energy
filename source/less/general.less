@@ -38,6 +38,7 @@ body {
   font-family: @font-family-base;
   color: @black;
   background-color:@white;
+  // background-color: aquamarine;
   box-shadow: 0 0 2px 0 #333333;
 }
 
@@ -70,11 +71,38 @@ a {
 
 @media (min-width: @tablet-width) {
   body {
-    max-width: @desktop-width;
+    // max-width: @desktop-width;
     width: @tablet-width;
   }
 }
 
 @media (min-width: @desktop-width) {
+  body {
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+    // background-size: 680px auto;
+    // background-image: url(../img/index-background-desktop@1x.jpg);
+    // background-position: 645px top;
+    // background-repeat: no-repeat;
+  }
 
+  .body-bg-desktop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 610px;
+    height: 696px;
+    background-size: 680px 696px;
+    background-image: url(../img/index-background-desktop@1x.jpg);
+    background-position: left top;
+    background-repeat: no-repeat;
+  }
+
+  @media  (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .body-bg-desktop {
+      background-image: url(../img/index-background-mobile@2x.jpg);
+    }
+  }
 }
