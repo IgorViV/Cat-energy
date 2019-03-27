@@ -314,13 +314,13 @@
           </picture>
           <img class="page-header__logo-text" src="img/logo-mobile-header.svg" width="101" height="18" alt="Cat energy">
         </a>
-        <button class="page-header__nav-button page-header__nav-button--open" type="button">
+        <button class="page-header__nav-button page-header__nav-button--close" type="button">
           <span class="visually-hidden">
             Открыть меню
           </span>
         </button>
       </div>
-      <nav class="page-nav page-nav--no-j-s">
+      <nav class="page-nav page-nav--no-js">
         <ul class="page-nav__list">
           <li class="page-nav__item page-nav__item--first page-nav__item--active">
             <a class="page-nav__link">
@@ -467,7 +467,8 @@
               </picture>
             </div>
           </div>
-          <div class="example__effect-level">
+          <form class="example__effect-level">
+            <input class="example__effect-value" type="number" name="effect-level" value="0">
             <span class="example__effect-state">Было</span>
             <div class="example__effect-line">
               <div class="example__effect-pin" tabindex="0">
@@ -475,7 +476,7 @@
               </div>
             </div>
             <span class="example__effect-state">Стало</span>
-          </div>
+          </form>
         </div>
       </section>
       <section class="contacts">
@@ -526,5 +527,8 @@
       </a>
     </footer>
     <script src="js/picturefill.js"></script>
+    <script src="js/utilites.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>
