@@ -1,12 +1,25 @@
-//
 .main {
 
 }
 
-@media (min-width: @tablet-width) {
+.main__catalog-title {
+  .reset();
+  padding: 15px 20px 26px 20px;
+  font-family: @font-family-base;
+  font-weight: @font-weight-base;
+  font-size: 36px;
+  line-height: 60px;
+}
 
+@media (min-width: @tablet-width) {
+  .main__catalog-title {
+    padding: 30px 30px;
+    font-size: 60px;
+  }
 }
 
 @media (min-width: @desktop-width) {
-
+  .main__catalog-title {
+    padding: 30px 40px;
+  }
 }

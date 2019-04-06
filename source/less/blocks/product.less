@@ -1,0 +1,123 @@
+.product {
+  border-top: 1px solid #ededed;
+}
+
+.product__list {
+  .reset();
+  list-style: none;
+}
+
+.product__item {
+  width: 320px;
+  .reset();
+  padding: 22px 20px 23px 20px;
+  border: 1px solid #ededed;
+}
+
+.product__item--further {
+  padding-top: 80px;
+  background-size: 30px 30px;
+  background-image: url(../img/icon-plus-mobile-grey.svg);
+  background-position: center 27px;
+  background-repeat: no-repeat;
+}
+
+.product__description-wripper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.product__title {
+  width: 75px;
+  .reset();
+  margin-left: 140px;
+  margin-bottom: 12px;
+  font-weight: @font-weight-base;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.product__title--further {
+  width: 205px;
+  .center();
+  margin-bottom: 8px;
+}
+
+.product__promo {
+  .reset-center();
+  margin-bottom: 20px;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.product__img {
+  position: absolute;
+  top: -22px;
+  left: 0;
+  z-index: 2;
+}
+
+.product__property {
+  width: 140px;
+  margin-left: 140px;
+  margin-bottom: 22px;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  color: #444444;
+  border-collapse: collapse;
+}
+
+.product__property-value {
+  text-align: right;
+}
+
+.product__property-value--price {
+  text-transform: uppercase;
+}
+
+.product__button {
+  width: 280px;
+  .reset-center();
+  margin-top: auto;
+  margin-bottom: 0;
+  padding: 10px 0;
+  font-family: @font-family-base;
+  font-weight: @font-weight-base;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: @white;
+  background-color: #68b738;
+  border: none;
+}
+
+
+.product__button:hover {
+  background-color: #5eaa2f;
+}
+
+.product__button:active span {
+  opacity: 0.3;
+}
+
+.product__button--further {
+  color: @black;
+  background-color: #f2f2f2;
+}
+
+.product__button--further:hover {
+  background-color: #ebebeb;
+}
+
+@media (min-width: @tablet-width) {
+
+}
+
+@media (min-width: @desktop-width) {
+
+}

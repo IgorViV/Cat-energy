@@ -1,0 +1,154 @@
+.other {
+
+}
+
+.other__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  .reset();
+  padding: 30px 20px;
+  padding-bottom: 33px;
+  padding-right: 0;
+  font-family: @font-family-base;
+  font-weight: @font-weight-base;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.other__title-line-before {
+  display: none;
+}
+
+.other__title-text {
+  width: 230px;
+}
+
+.other__title-line-after {
+  flex-grow: 1;
+  width: 53px;
+  height: 3px;
+  margin-top: 0.6em;
+  margin-left: 18px;
+  background-color: #68b738;
+}
+
+.other__list {
+  .reset();
+  padding: 0 20px;
+  list-style: none;
+}
+
+.other__item {
+  .reset();
+  padding: 14px 0 16px 0;
+  border-top: 1px solid #cdcdcd;
+}
+
+.other__item:last-of-type {
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.other__item-title {
+  .reset();
+  margin-bottom: 11px;
+  font-family: @font-family-base;
+  font-weight: @font-weight-base;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.other__property {
+  width: 100%;
+  margin-bottom: 15px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+  border-collapse: collapse;
+}
+
+.other__property-value {
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.other__button {
+  width: 280px;
+  .reset-center();
+  padding: 10px 0;
+  font-family: @font-family-base;
+  font-weight: @font-weight-base;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: @white;
+  background-color: #68b738;
+  border: none;
+}
+
+
+.other__button:hover {
+  background-color: #5eaa2f;
+}
+
+.other__button:active span {
+  opacity: 0.3;
+}
+
+.other__promo {
+  padding: 39px 20px 35px 20px;
+}
+
+.other__promo-text {
+  position: relative;
+  .reset();
+  padding-top: 188px;
+  padding-bottom: 47px;
+  text-align: center;
+  background-color: #5eaa2f;
+  background-size: 100%;
+  background-image: url(../img/gift-photo-mobile@1x.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+
+  span {
+    display: block;
+    width: 160px;
+    .center();
+    color: @white;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@media  (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  .other__promo-text {
+    background-image: url(../img/gift-photo-mobile@2x.jpg);
+  }
+}
+
+.other__promo-text::before {
+  content: '';
+  position: absolute;
+  top: 65px;
+  left: 50%;
+  z-index: 2;
+  width: 56px;
+  height: 60px;
+  background-size: 100%;
+  background-image: url(../img/icon-gift.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translateX(-50%);
+}
+
+@media (min-width: @tablet-width) {
+
+}
+
+@media (min-width: @desktop-width) {
+
+}
