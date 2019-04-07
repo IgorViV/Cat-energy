@@ -81,7 +81,8 @@
 }
 
 .product__button {
-  width: 280px;
+  width: 100%;
+  max-width: 280px;
   .reset-center();
   margin-top: auto;
   margin-bottom: 0;
@@ -115,7 +116,105 @@
 }
 
 @media (min-width: @tablet-width) {
+  .product {
+    border-top: none;
+  }
 
+  .product__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .product__item {
+    width: 384px;
+    padding: 82px 30px 58px 30px;
+    border-bottom: none;
+  }
+
+  .product__description-wripper {
+    padding: 163px 38px 40px 38px;
+    background-color: #f2f2f2;
+  }
+
+  .product__title {
+    width: 130px;
+    .center();
+    // .reset();
+    // margin-left: 0;
+    margin-bottom: 20px;
+    // font-weight: @font-weight-base;
+    font-size: 20px;
+    // line-height: 20px;
+    // text-transform: uppercase;
+    text-align: center;
+  }
+
+  .product__img {
+    // position: absolute;
+    top: -82px;
+    left: 50%;
+    // z-index: 2;
+    width: 324px;
+    transform: translateX(-50%);
+  }
+
+  .product__img--small {
+    top: -48px;
+  }
+
+  .product__property {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 35px;
+    // font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    // color: #444444;
+    // border-collapse: collapse;
+  }
+
+  .product__property-value,
+  .product__property-name {
+    padding: 7px 0;
+    border-bottom: 1px solid #cdcdcd;
+    // text-transform: uppercase;
+  }
+
+  .product__item--further {
+    display: flex;
+    align-self: stretch;
+    padding-top: 85px;
+    background-size: 60px 60px;
+    background-image: url(../img/icon-plus-grey.svg);
+    background-position: center 135px;
+    // background-repeat: no-repeat;
+  }
+
+  .product__description-wripper--further {
+    align-self: stretch;
+    width: 100%;
+    padding-top: 160px;
+    background-color: transparent;
+    border: 1px solid #e6e6e6;
+  }
+
+  .product__title--further {
+    width: 135px;
+    // .center();
+    margin-bottom: 26px;
+  }
+
+  .product__promo {
+    width: 168px;
+    // .reset-center();
+    // margin-bottom: 20px;
+    // font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    // color: #444444;
+    text-align: center;
+  }
 }
 
 @media (min-width: @desktop-width) {
