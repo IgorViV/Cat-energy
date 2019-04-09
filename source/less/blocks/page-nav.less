@@ -116,4 +116,23 @@
   .page-nav__item--active::before {
     background-color: @white;
   }
+
+  .page-nav--catalog {
+    .page-nav__link {
+      color: @black;
+
+      &[href]:hover,
+      &[href]:focus {
+        color: @black;
+      }
+
+      &[href]:active {
+        color: @black;
+      }
+    }
+
+    .page-nav__item--active::before {
+      background-color: #68b738;
+    }
+  }
 }
