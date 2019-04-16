@@ -353,7 +353,7 @@
             <legend class="visually-hidden">Данные вашего кота</legend>
             <ul class="questionnaire__fieldset-list">
               <li class="questionnaire__fieldset-item">
-                <label class="questionnaire__label questionnaire__label--name">
+                <label class="questionnaire__label questionnaire__label--user questionnaire__label--name">
                   <span>
                     Имя:*
                   </span>
@@ -361,7 +361,7 @@
                 </label>
               </li>
               <li class="questionnaire__fieldset-item">
-                <label class="questionnaire__label questionnaire__label--weight">
+                <label class="questionnaire__label questionnaire__label--user questionnaire__label--weight">
                   <span>
                     Вес (кг):*
                   </span>
@@ -369,7 +369,7 @@
                 </label>
               </li>
               <li class="questionnaire__fieldset-item">
-                <label class="questionnaire__label questionnaire__label--age">
+                <label class="questionnaire__label questionnaire__label--user questionnaire__label--age">
                   <span>
                     Возраст (лет):*
                   </span>
@@ -380,26 +380,26 @@
           </fieldset>
           <fieldset class="questionnaire__fieldset questionnaire__fieldset--result">
             <legend class="visually-hidden">Выбор желаемого результата</legend>
-            <ul class="questionnaire__fieldset-list">
-              <li class="questionnaire__fieldset-item">
+            <ul class="questionnaire__fieldset-list questionnaire__fieldset-list--result">
+              <li class="questionnaire__fieldset-item questionnaire__fieldset-item--result">
                 <label class="questionnaire__label questionnaire__label--result">
-                  <input type="radio" name="result" value="losing" checked>
+                  <input class="visually-hidden" type="radio" name="result" value="losing" checked>
                   <span>
                     Похудение
                   </span>
                 </label>
               </li>
-              <li class="questionnaire__fieldset-item">
+              <li class="questionnaire__fieldset-item questionnaire__fieldset-item--result">
                 <label class="questionnaire__label questionnaire__label--result">
-                  <input type="radio" name="result" value="mass">
+                  <input class="visually-hidden" type="radio" name="result" value="mass">
                   <span>
                     Набор массы
                   </span>
                 </label>
               </li>
-              <li class="questionnaire__fieldset-item">
+              <li class="questionnaire__fieldset-item questionnaire__fieldset-item--result">
                 <label class="questionnaire__label questionnaire__label--result">
-                  <input type="radio" name="result" value="recommendation">
+                  <input class="visually-hidden" type="radio" name="result" value="recommendation">
                   <span>
                     Не знаю (Нужен ваш совет)
                   </span>
@@ -411,7 +411,7 @@
               <legend class="questionnaire__fieldset-title">Контактные данные (владельца кота)</legend>
               <ul class="questionnaire__fieldset-list">
                 <li class="questionnaire__fieldset-item">
-                  <label class="questionnaire__label questionnaire__label--email">
+                  <label class="questionnaire__label questionnaire__label--owner questionnaire__label--email">
                     <span>
                       E-mail:*
                     </span>
@@ -419,7 +419,7 @@
                   </label>
                 </li>
                 <li class="questionnaire__fieldset-item">
-                  <label class="questionnaire__label questionnaire__label--phone">
+                  <label class="questionnaire__label questionnaire__label--owner questionnaire__label--phone">
                     <span>
                       Телефон:*
                     </span>
@@ -435,33 +435,33 @@
             <fieldset class="questionnaire__fieldset questionnaire__fieldset--additionally">
               <legend class="questionnaire__fieldset-title">Дополнительно</legend>
               <ul class="questionnaire__fieldset-list">
-                <li class="questionnaire__fieldset-item">
-                  <label class="questionnaire__label questionnaire__label--sugar">
-                    <input type="checkbox" name="sugar" checked>
+                <li class="questionnaire__fieldset-item questionnaire__fieldset-item--additionally">
+                  <label class="questionnaire__label questionnaire__label--additionally questionnaire__label--sugar">
+                    <input class="visually-hidden" type="checkbox" name="sugar" checked>
                     <span>
                       Сахарозаменитель
                     </span>
                   </label>
                 </li>
-                <li class="questionnaire__fieldset-item">
-                  <label class="questionnaire__label questionnaire__label--water">
-                    <input type="checkbox" name="water">
+                <li class="questionnaire__fieldset-item questionnaire__fieldset-item--additionally">
+                  <label class="questionnaire__label questionnaire__label--additionally questionnaire__label--water">
+                    <input class="visually-hidden" type="checkbox" name="water">
                     <span>
                       Питьевая вода
                     </span>
                   </label>
                 </li>
-                <li class="questionnaire__fieldset-item">
-                  <label class="questionnaire__label questionnaire__label--milk">
-                    <input type="checkbox" name="milk">
+                <li class="questionnaire__fieldset-item questionnaire__fieldset-item--additionally">
+                  <label class="questionnaire__label questionnaire__label--additionally questionnaire__label--milk">
+                    <input class="visually-hidden" type="checkbox" name="milk">
                     <span>
                       Молоко
                     </span>
                   </label>
                 </li>
-                <li class="questionnaire__fieldset-item">
-                  <label class="questionnaire__label questionnaire__label--vitamins">
-                    <input type="checkbox" name="vitamins">
+                <li class="questionnaire__fieldset-item questionnaire__fieldset-item--additionally">
+                  <label class="questionnaire__label questionnaire__label--additionally questionnaire__label--vitamins">
+                    <input class="visually-hidden" type="checkbox" name="vitamins">
                     <span>
                       Витамины
                     </span>
@@ -470,12 +470,30 @@
               </ul>
             </fieldset>
           <button class="questionnaire__button" type="submit">
-            Отправить заявку
+            <span>
+              Отправить заявку
+            </span>
           </button>
-          <p>
+          <p class="questionnaire__note">
             * — Обязательные поля
           </p>
         </form>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">
+          Контакты для сотрудничества
+        </h2>
+        <div class="contacts__address contacts__address--catalog">
+          <h2 class="contacts__address-title">
+            Приглашаем к&nbsp;сотрудничеству дилеров!
+          </h2>
+          <p class="contacts__adress-content">
+            <span>ул. Большая Конюшенная, д. 19/8</span> <span>Санкт-Петербург</span>
+          </p>
+        </div>
+        <div class="contacts__map">
+          <!-- <iframe class="contacts__google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1552195644121" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+        </div>
       </section>
     </main>
     <footer class="footer">
