@@ -115,8 +115,13 @@
     border: 1px solid #e6e6e6;
     outline: none;
   }
+
   input:focus {
     border: 2px solid #444444;
+
+    & + svg {
+      fill: #68b738;
+    }
   }
 }
 
@@ -169,6 +174,17 @@
 }
 
 .questionnaire__label--email {
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    z-index: 3;
+    fill: #222222;
+    transform: translateY(-50%);
+  }
+
   span {
     width: 61px;
   }
@@ -179,6 +195,17 @@
 }
 
 .questionnaire__label--phone {
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: 50%;
+    right: 13px;
+    z-index: 3;
+    fill: #222222;
+    transform: translateY(-50%);
+  }
+
   span {
     width: 76px;
   }
