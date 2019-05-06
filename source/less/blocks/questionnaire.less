@@ -669,5 +669,159 @@
 }
 
 @media (min-width: @desktop-width) {
+  .questionnaire {
+    padding-bottom: 80px;
+  }
 
+  .questionnaire__promo {
+    width: 414px;
+    padding-top: 25px;
+    padding-left: 40px;
+  }
+
+  .questionnaire__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .questionnaire__fieldset {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .questionnaire__fieldset--user {
+    width: 610px;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .questionnaire__fieldset--owner {
+    margin-top: 68px;
+    padding-bottom: 46px;
+  }
+
+  .questionnaire__fieldset--comments {
+    padding-bottom: 64px;
+  }
+
+  .questionnaire__fieldset--additionally {
+    padding-top: 104px;
+    padding-bottom: 71px;
+  }
+
+  .questionnaire__fieldset--owner::before,
+  .questionnaire__fieldset--comments::before,
+  .questionnaire__fieldset--additionally::before {
+    display: none;
+  }
+
+  .questionnaire__fieldset--owner::after,
+  .questionnaire__fieldset--comments::after,
+  .questionnaire__fieldset--additionally::after {
+    left: 594px;
+  }
+
+  .questionnaire__fieldset--comments::after {
+    left: 260px;
+  }
+
+  .questionnaire__fieldset--additionally::after {
+    left: 293px;
+  }
+
+  .questionnaire__fieldset-title {
+    left: 40px;
+  }
+
+  .questionnaire__label--user {
+    width: 570px;
+  }
+
+  .questionnaire__label--name {
+
+    input {
+      width: 506px;
+    }
+  }
+
+  .questionnaire__label--weight {
+
+    input {
+      width: 475px;
+    }
+  }
+
+  .questionnaire__label--age {
+
+    input {
+      width: 436px;
+    }
+  }
+
+  .questionnaire__fieldset-list--owner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .questionnaire__fieldset-item--owner {
+    width: 570px;
+  }
+
+  .questionnaire__label--email {
+
+    svg {
+      right: 20px;
+    }
+
+    span {
+      width: 83px;
+    }
+
+    input {
+      width: 487px;
+    }
+  }
+
+  .questionnaire__label--phone {
+
+    svg {
+      right: 20px;
+    }
+
+    input {
+      width: 472px;
+    }
+  }
+
+  .questionnaire__fieldset--result {
+    width: 610px;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+
+  .questionnaire__textarea {
+    width: 1220px;
+  }
+
+  .questionnaire__fieldset-item--additionally {
+    width: 245px;
+    margin-bottom: 0;
+  }
+
+  .questionnaire__button-wrapper {
+    width: 1220px;
+  }
+
+  .questionnaire__button {
+    width: 570px;
+    margin-left: 0;
+  }
+
+  .questionnaire__note {
+    margin-left: 80px;
+  }
 }
